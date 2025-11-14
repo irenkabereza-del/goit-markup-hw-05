@@ -548,7 +548,7 @@ translate: translate(-50%, -50%) scale(1.5);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .starter-button:hover,
-.starter-button:focus > starter-button-icon {
+.starter-button:focus starter-button-icon {
     fill: #ffffff;
 }
 .modal-description {
@@ -585,9 +585,13 @@ background-color: transparent;
  outline: transparent; 
  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus > input-icon{
-    fill: #4D5AE5;
+.form-input:focus {
+    border-color: #4D5AE5;
 }
+form-input:focus-within + input-icon{
+   fill: #4D5AE5;
+}
+
 .input-icon {
     position: absolute;
     left: 16px;
@@ -638,7 +642,7 @@ color: #8e8f99;
     justify-content: center;
     fill: transparent;
 }
-.form-privacy:checked + privacy-label > privacy-span {
+form-privacy:checked + privacy-label > privacy-span {
 background-color: #404bbf;
 border: none;
 fill: #f4f4fd;
