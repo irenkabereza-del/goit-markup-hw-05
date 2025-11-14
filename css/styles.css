@@ -588,7 +588,7 @@ background-color: transparent;
 .form-input:focus {
     border-color: #4D5AE5;
 }
-form-input:focus-within + input-icon{
+.form-input:focus + .input-icon {
    fill: #4D5AE5;
 }
 
@@ -642,7 +642,7 @@ color: #8e8f99;
     justify-content: center;
     fill: transparent;
 }
-form-privacy:checked + privacy-label > privacy-span {
+.form-privacy:checked + .privacy-label > .privacy-span {
 background-color: #404bbf;
 border: none;
 fill: #f4f4fd;
